@@ -22,8 +22,8 @@ class docker::repos {
           release           => $docker::package_release,
           repos             => $docker::package_repos,
           key               => {
-            'id'	=> $package_key,
-	    'server'	=> $key_source,
+            'id'	    => $package_key,
+	          'server'	=> $key_source,
           },
           include	    => {
             'src'	=> false,
