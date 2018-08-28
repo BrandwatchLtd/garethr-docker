@@ -23,7 +23,7 @@ class docker::repos {
           repos             => $docker::package_repos,
           key               => {
             'id'	    => $package_key,
-	          'server'	=> $key_source,
+	          'source'	=> $key_source,
           },
           include	    => {
             'src'	=> false,
